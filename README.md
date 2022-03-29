@@ -1,4 +1,4 @@
-# ElixirPhoenixRestApi
+# Anime List API
 
 To start your Phoenix server:
 
