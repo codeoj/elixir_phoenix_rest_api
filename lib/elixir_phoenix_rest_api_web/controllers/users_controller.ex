@@ -1,4 +1,4 @@
-defmodule ElixirPhoenixRestApi.UsersController do
+defmodule ElixirPhoenixRestApiWeb.UsersController do
   use ElixirPhoenixRestApiWeb, :controller
 
   def create(conn, params) do

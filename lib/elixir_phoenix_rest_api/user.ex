@@ -23,7 +23,7 @@ defmodule ElixirPhoenixRestApi.User do
     %__MODULE__{}
     |> cast(params, @required_params)
     |> validate_required(@required_params)
-    |> validate_length(:password, min: 8)
+    |> validate_length(:password, min: 5)
     |> put_password_hash()
   end
 
