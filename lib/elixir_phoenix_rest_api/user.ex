@@ -4,7 +4,7 @@ defmodule ElixirPhoenixRestApi.User do
 
   @primary_key {:id, Ecto.UUID, autogenerate: true}
 
-  schema "user" do
+  schema "users" do
     field :name, :string
     field :password_hash, :string
     field :password, :string, virtual: true
