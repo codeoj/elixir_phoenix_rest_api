@@ -16,4 +16,18 @@ defmodule ElixirPhoenixRestApiWeb.UsersController do
   end
 
   defp handle_response({:error, _result} = error, _conn), do: error
+
+  def delete(conn, %{"id" => id}) do
+    id
+    |> ElixirPhoenixRestApi.delete_user()
+    |> handle_delete(conn)
+  end
+
+  defp handle_delete({:ok, _user}, conn) do
+    conn
+    |> put_status(:no_content)
+    |> text("")
+  end
+
+  defp handle_delete({:error, _message} = error, _conn), do: error
 end
