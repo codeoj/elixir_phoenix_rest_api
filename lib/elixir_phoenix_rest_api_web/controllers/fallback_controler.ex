@@ -5,6 +5,6 @@ defmodule ElixirPhoenixRestApiWeb.FallbackController do
     conn
     |> put_status(:bad_request)
     |> put_view(ElixirPhoenixRestApiWeb.ErrorView)
-    |> render("400.josn", result: result)
+    |> render("400.json", result: result)
   end
 end
