@@ -11,7 +11,7 @@ defmodule ElixirPhoenixRestApi.User.Get do
 
   defp get(uuid) do
     case Repo.get(User, uuid) do
-      nil -> {:erro, "User does not exist"}
+      nil -> {:error, "User does not exist"}
       user -> {:ok, user}
     end
   end
