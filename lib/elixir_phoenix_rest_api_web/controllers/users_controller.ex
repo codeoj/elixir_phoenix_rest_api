@@ -21,6 +21,12 @@ defmodule ElixirPhoenixRestApiWeb.UsersController do
     |> handle_delete(conn)
   end
 
+  def update(conn, params) do
+    params
+    |> ElixirPhoenixRestApi.update_user()
+    |> handle_response(conn, "update.json", :ok)
+  end
+
   defp handle_response({:ok, user}, conn, view, status) do
     conn
     |> put_status(status)

@@ -21,4 +21,18 @@ defmodule ElixirPhoenixRestApiWeb.UsersView do
       inserted_at: inserted_at
     }
   end
+
+  def render("update.json", %{
+        user: %User{id: id, name: name, inserted_at: inserted_at, updated_at: updated_at}
+      }) do
+    %{
+      message: "User Updated",
+      user: %{
+        id: id,
+        name: name,
+        inserted_at: inserted_at,
+        updated_at: updated_at
+      }
+    }
+  end
 end
