@@ -1,7 +1,7 @@
 defmodule ElixirPhoenixRestApi.Anime do
   @keys [:id, :title, :year, :score, :genres]
-
   @enforce_keys @keys
+  @derive Jason.Encoder
 
   defstruct @keys
 
