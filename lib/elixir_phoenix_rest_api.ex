@@ -8,5 +8,7 @@ defmodule ElixirPhoenixRestApi do
   defdelegate update_user(params), to: User.Update, as: :call
 
   defdelegate get_anime(params), to: Anime.Get, as: :call
+
   defdelegate create_user_anime(params), to: UserAnime.Create, as: :call
+  defdelegate delete_user_anime(params), to: UserAnime.Delete, as: :call
 end
