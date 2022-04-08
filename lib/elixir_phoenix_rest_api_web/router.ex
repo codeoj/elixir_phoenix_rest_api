@@ -8,6 +8,7 @@ defmodule ElixirPhoenixRestApiWeb.Router do
   scope "/api", ElixirPhoenixRestApiWeb do
     pipe_through :api
     resources "/users", UsersController, only: [:create, :show, :delete, :update]
+    resources "/user_animes", UserAnimesController, only: [:create, :show, :delete, :update]
     get "/anime/:name", AnimesController, :show
   end
 
