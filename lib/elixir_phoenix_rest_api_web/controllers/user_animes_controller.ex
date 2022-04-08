@@ -15,6 +15,12 @@ defmodule ElixirPhoenixRestApiWeb.UserAnimesController do
     |> handle_delete(conn)
   end
 
+  def show(conn, %{"id" => id}) do
+    id
+    |> ElixirPhoenixRestApi.get_user_anime()
+    |> handle_response(conn, "show.json", :ok)
+  end
+
   defp handle_delete({:ok, _anime}, conn) do
     conn
     |> put_status(:no_content)
