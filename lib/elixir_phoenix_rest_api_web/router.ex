@@ -9,7 +9,7 @@ defmodule ElixirPhoenixRestApiWeb.Router do
     pipe_through :api
     resources "/users", UsersController, only: [:create, :show, :delete, :update]
     resources "/user_animes", UserAnimesController, only: [:create, :show, :delete, :update]
-    get "/anime/:name", AnimesController, :show
+    get "/animes/:name", AnimesController, :show
   end
 
   # Enables LiveDashboard only for development
