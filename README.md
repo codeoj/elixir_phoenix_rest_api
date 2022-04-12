@@ -94,3 +94,28 @@ Parâmetros: `user id valido`
     HTTP/1.1 204 No Content
     {}
         
+
+
+### Request
+#### get a pokemon  
+`http://localhost:4000/api/pokemons/mr-mime`
+
+Parâmetros: `nome de um pokemon valido` 
+
+### Response
+    
+    
+    HTTP/1.1 200 OK
+    {
+        "id": 122,
+        "moves": [
+           ...
+        ],
+        "name": "mr-mime",
+        "types": [
+           "psychic",
+            "fairy"
+        ]
+    }
+
+
