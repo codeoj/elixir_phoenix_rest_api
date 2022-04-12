@@ -25,4 +25,4 @@ elixir_phoenix_rest_api-*.tar
 /config/*dev.exs
 *prod.exs
 *runtime.exs
-*test.exs
+/config
