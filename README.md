@@ -1,4 +1,4 @@
-# Anime List API
+# Pokémom PVP
 
 To start your Phoenix server:
 
@@ -12,11 +12,12 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Description
-Anime List é uma API REST JSON, que interage com o banco de dados através do Ecto, ela faz interações com a API Jikan para solicitar as informações. Os dados recebidos podem ser visualizados, ou adicionados a um usuário.
+Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo visualizar as informações de um pokémon, e possibilita a formaçao de times pokémons, que poderão batalhar com times de outros usuários.
 
-## Features
-- Após receber as informações da API Jikan, é aplicado um parse, para gerar uma lista menor de dados.
-- É utilizado o Tesla para fazer alguns plugs no protocolo http, e criar um client com a Jikan API.
+## Infos
+- Interações com o banco de dados são feitas através do Ecto.
+- Após receber as informações da Poke API, é aplicado um parse, para gerar uma lista menor de dados.
+- É utilizado o Tesla para fazer alguns plugs no protocolo http, e criar um client com a Poke API.
 - Ao criar um usuário, utiliza-se a biblioteca Argon para criptografar, e salvar um hash do password no banco de dados.
 
 ### Request
