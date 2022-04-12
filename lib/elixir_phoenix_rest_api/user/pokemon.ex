@@ -1,4 +1,4 @@
-defmodule ElixirPhoenixRestApi.User.Anime do
+defmodule ElixirPhoenixRestApi.User.Pokemon do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -7,16 +7,15 @@ defmodule ElixirPhoenixRestApi.User.Anime do
   @primary_key {:id, Ecto.UUID, autogenerate: true}
   @foreign_key_type Ecto.UUID
 
-  schema "animes" do
-    field :title, :string
-    field :year, :integer
-    field :score, :float
-    field :genres, {:array, :string}
+  schema "pokemons" do
+    field :name, :string
+    field :types, {:array, :string}
+    field :moves, {:array, :string}
     belongs_to(:user, User)
     timestamps()
   end
 
-  @required [:title, :year, :score, :genres, :trainer_id]
+  @required [:name, :types, :moves, :trainer_id]
 
   def build(params) do
     params
