@@ -2,7 +2,7 @@ defmodule ElixirPhoenixRestApi.User do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias ElixirPhoenixRestApi.User.Anime
+  alias ElixirPhoenixRestApi.User.Pokemon
 
   @primary_key {:id, Ecto.UUID, autogenerate: true}
 
@@ -10,7 +10,7 @@ defmodule ElixirPhoenixRestApi.User do
     field :name, :string
     field :password_hash, :string
     field :password, :string, virtual: true
-    has_many(:anime, Anime)
+    has_many(:pokemon, Pokemon)
     timestamps()
   end
 

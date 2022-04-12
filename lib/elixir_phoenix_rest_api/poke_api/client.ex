@@ -1,11 +1,11 @@
-defmodule ElixirPhoenixRestApi.JikanApi.Client do
+defmodule ElixirPhoenixRestApi.PokeApi.Client do
   use Tesla
 
-  plug Tesla.Middleware.BaseUrl, "https://api.jikan.moe/v4"
+  plug Tesla.Middleware.BaseUrl, "https://pokeapi.co/api/v2"
   plug Tesla.Middleware.JSON
 
-  def get_anime(name) do
-    "/anime?q=#{name}"
+  def get_pokemon(name) do
+    "/pokemon/#{name}"
     |> get()
     |> handle_get()
   end
