@@ -1,5 +1,11 @@
 # Pokémom PVP
 
+- [Description](#description)
+- [Infos](#infos)
+- [User routes](#user-routes)
+- [Pokemon route](#pokemon-route)
+- [Pokemons user routes](#pokemons-user-routes)
+
 To start your Phoenix server:
 
 - Install dependencies with `mix deps.get`
@@ -119,7 +125,7 @@ Parâmetros: `nome de um pokemon valido`
 
 
 
-## Pokemon user routes
+## Pokemons user routes
 
 ### Request
 
