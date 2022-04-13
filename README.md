@@ -22,6 +22,7 @@ Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo 
 - É utilizado o Tesla para fazer alguns plugs no protocolo http, e criar um client com a Poke API.
 - Ao criar um usuário, utiliza-se a biblioteca Argon para criptografar, e salvar um hash do password no banco de dados.
 
+## User routes
 ### Request
 
 #### create user
@@ -93,6 +94,8 @@ Parâmetros: `user id valido`
 
 ### Request
 
+## Pokemon route
+
 #### show a pokemon
 
 GET `http://localhost:4000/api/pokemons/mr-mime`
@@ -113,6 +116,10 @@ Parâmetros: `nome de um pokemon valido`
             "fairy"
         ]
     }
+
+
+
+## Pokemon user routes
 
 ### Request
 
@@ -139,3 +146,50 @@ Parâmetros: `nome do pokemon, e o id do usuário`
         ],
         "user_id": "036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a"
     }
+
+
+
+
+### Request
+
+#### get a pokemon user
+
+GET `http://localhost:4000/api/user_pokemons/02427352-73bf-4ef9-803d-55dd69a8d477`
+
+Parâmetros: `id do user pokemon`
+
+### Response
+
+    HTTP/1.1 200 OK
+    "pokemon": {
+        "id": "02427352-73bf-4ef9-803d-55dd69a8d477",
+        "inserted_at": "2022-04-13T12:28:58",
+        "moves": [
+           ...
+        ],
+        "name": "mr-mime",
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "user": {
+            "user_id": "e696028b-4c34-4fd5-a2b4-a420e578d889",
+            "user_name": "Oliver"
+        }
+    }
+
+    
+
+
+### Request
+
+#### delete a pokemon user
+
+DELETE `http://localhost:4000/api/user_pokemons/97379eb6-f977-47dd-a689-a46ba5bf1f59`
+
+Parâmetros: `id do user pokemon`
+
+### Response
+
+    HTTP/1.1 204 No Content
+    {}
