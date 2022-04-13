@@ -118,7 +118,7 @@ Parâmetros: `nome de um pokemon valido`
 
 ### Request
 
-#### get a pokemon
+#### create a pokemon
 
 `http://localhost:4000/api/user_pokemons`
 
