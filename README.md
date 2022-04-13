@@ -1,10 +1,16 @@
 # Pokémom PVP
 
-- [Description](#description)
+Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo visualizar as informações de um pokémon, e possibilita a formaçao de times pokémons, que poderão batalhar com times de outros usuários.
+
+
+- [Start](#start)
 - [Infos](#infos)
 - [User routes](#user-routes)
 - [Pokemon route](#pokemon-route)
 - [Pokemons user routes](#pokemons-user-routes)
+
+
+## Start
 
 To start your Phoenix server:
 
@@ -17,9 +23,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Description
-
-Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo visualizar as informações de um pokémon, e possibilita a formaçao de times pokémons, que poderão batalhar com times de outros usuários.
 
 ## Infos
 
