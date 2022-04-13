@@ -11,7 +11,7 @@ defmodule ElixirPhoenixRestApi.User.Delete do
 
   defp delete(uuid) do
     case fetch_user(uuid) do
-      nil -> {:erro, "User does not exist"}
+      nil -> {:error, "User does not exist"}
       user -> Repo.delete(user)
     end
   end

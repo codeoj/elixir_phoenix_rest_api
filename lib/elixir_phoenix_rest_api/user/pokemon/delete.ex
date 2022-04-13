@@ -11,7 +11,7 @@ defmodule ElixirPhoenixRestApi.User.Pokemon.Delete do
 
   defp delete(uuid) do
     case fetch_pokemon(uuid) do
-      nil -> {:erro, "Pokemon does not exist"}
+      nil -> {:error, "Pokemon does not exist"}
       pokemon -> Repo.delete(pokemon)
     end
   end

@@ -1,7 +1,7 @@
 defmodule ElixirPhoenixRestApi.User.Pokemon.Create do
-  alias ElixirPhoenixRestApi.PokeApi.Client
   alias ElixirPhoenixRestApi.Pokemon
   alias ElixirPhoenixRestApi.User.Pokemon, as: UserPokemon
+  alias ElixirPhoenixRestApi.PokeApi.Client
   alias ElixirPhoenixRestApi.Repo
 
   def call(%{"name" => name} = params) do

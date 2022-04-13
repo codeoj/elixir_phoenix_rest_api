@@ -15,7 +15,7 @@ defmodule ElixirPhoenixRestApi.User.Pokemon do
     timestamps()
   end
 
-  @required [:name, :types, :moves, :trainer_id]
+  @required [:name, :types, :moves, :user_id]
 
   def build(params) do
     params

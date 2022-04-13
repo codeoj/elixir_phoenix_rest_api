@@ -1,6 +1,6 @@
 defmodule ElixirPhoenixRestApi do
   alias ElixirPhoenixRestApi.{Pokemon, User}
-  alias ElixirPhoenixRestApi.User.Pokemon, as: UserPokemon
+  alias User.Pokemon, as: UserPokemon
 
   defdelegate create_user(params), to: User.Create, as: :call
   defdelegate delete_user(params), to: User.Delete, as: :call
