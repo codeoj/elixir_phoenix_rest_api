@@ -25,8 +25,7 @@ Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo 
 ### Request
 
 #### create user
-
-`http://localhost:4000/api/users "name": "Um nome", "password": "maior_que_cinco_caracteres"`
+POST `http://localhost:4000/api/users`
 
 Parâmetros: `Um nome, e um password maior que cinco caracteres`
 
@@ -45,8 +44,7 @@ Parâmetros: `Um nome, e um password maior que cinco caracteres`
 ### Request
 
 #### show user
-
-`http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
+GET `http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
 
 Parâmetros: `user id valido`
 
@@ -63,7 +61,7 @@ Parâmetros: `user id valido`
 
 #### update user
 
-`http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
+PUT `http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
 
 Parâmetros: `Um novo nome, e/ou um novo password`
 
@@ -84,7 +82,7 @@ Parâmetros: `Um novo nome, e/ou um novo password`
 
 #### delete user
 
-`http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
+DELETE `http://localhost:4000/api/users/036f7ffe-fdf6-4110-8ba3-7bd35f9cb77a`
 
 Parâmetros: `user id valido`
 
@@ -95,9 +93,9 @@ Parâmetros: `user id valido`
 
 ### Request
 
-#### get a pokemon
+#### show a pokemon
 
-`http://localhost:4000/api/pokemons/mr-mime`
+GET `http://localhost:4000/api/pokemons/mr-mime`
 
 Parâmetros: `nome de um pokemon valido`
 
@@ -118,9 +116,9 @@ Parâmetros: `nome de um pokemon valido`
 
 ### Request
 
-#### create a pokemon
+#### create a pokemon user
 
-`http://localhost:4000/api/user_pokemons`
+POST `http://localhost:4000/api/user_pokemons`
 
 Parâmetros: `nome do pokemon, e o id do usuário`
 
