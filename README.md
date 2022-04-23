@@ -1,6 +1,6 @@
 # Pokémom PVP
 
-Pokémom PVP é uma API REST JSON. Que inclui a criação de usuários, podendo visualizar as informações de um pokémon, e possibilita a formaçao de times pokémons.
+Uma API REST JSON. Que inclui a criação de usuários, podendo visualizar as informações de um pokémon, e possibilita a formaçao de times pokémons.
 
 
 - [Start](#start)
